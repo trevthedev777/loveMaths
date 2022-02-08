@@ -111,6 +111,15 @@ body {
     transition: all 0.5s;
 }
 
+/* Labels under the Icons */
+.btn--big::after{
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.5em;
+}
+
 .btn--blue {
     border-color: blue;
     color: blue;
@@ -169,7 +178,7 @@ body {
 
 /* --------- Media queries */
 
-@media (max-width: 414px) {
+@media (max-width: 518px) {
     .controls-area {
         width: 100%;
     }
@@ -224,7 +233,7 @@ body {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 364px) {
     .game-area {
         height: 70vh;
     }
